@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="The Tech Chad - Home">
+	<main>		
+		<img src="/douche.png" class="rounded-xl mt-5" />		
+		<h2 class="instructions text-black text-xl font-bold border-yellow-400 border-4">Follow my online programm to become a 10x Engineer in 3 months</h2>
+		<div class="instructions">
+			<h2 class="text-xl font-bold">
+				Content of the training 👇
+			</h2>
+			<ul class="mt-2">
+				<li><span>&rarr;</span> Learn 30 technologies to master fullstack web development</li>
+				<li><span>&rarr;</span> Tips to get hired by any <strong>FAANG</strong> company</li>
+				<li><span>&rarr;</span> Future of web technologies (Metaverse, Web3 + Web4, AI, ...)</li>
+				<li><span>&rarr;</span> Build a engaged Twitter community and sell your own eBook</li>
+				<li><span>&rarr;</span> Thousands of Ideas to create AI's powered online tools</li>
+				<li><span>&rarr;</span> Website premium templates (Wordpress, NextJS)</li>
+			</ul>
+		</div>
+		<ul role="list" class="link-card-grid">
+			<Card
+				href="https://www.youtube.com/watch?v=p7YXXieghto"
+				title="Download My eBook NOW!"
+				body="Discount -50% if you follow me on Twitter ❤️"
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>	
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		/* border: 1px solid rgba(var(--accent), 25%); */
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+</style>
